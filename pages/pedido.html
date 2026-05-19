@@ -20,9 +20,6 @@
                 <a href="principal.html" style="color: white; text-decoration: none; font-weight: bold;">Inicio</a>
             </li>
             <li style="display: inline; margin: 0 10px;">
-                <a href="principal.html#menu" style="color: white; text-decoration: none; font-weight: bold;">Menú</a>
-            </li>
-            <li style="display: inline; margin: 0 10px;">
                 <a href="pedido.html" style="color: #ffcc00; text-decoration: none; font-weight: bold;">Mi Pedido</a>
             </li>
             <li style="display: inline; margin: 0 10px;">
@@ -39,8 +36,7 @@
 
     <main style="flex: 1; max-width: 800px; margin: 20px auto; padding: 0 20px; width: 100%;">
         
-        <!-- Resumen del Carrito de Compras -->
-        <section style="background-color: white; padding: 25px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); margin-bottom: 30px;">
+        <section id="resumen-compra" style="background-color: white; padding: 25px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); margin-bottom: 30px;">
             <h2 style="color: darkred; border-bottom: 2px solid darkred; padding-bottom: 10px; margin-top: 0;">Resumen de tu compra</h2>
             
             <table style="width: 100%; border-collapse: collapse; text-align: left; margin-bottom: 20px;">
@@ -52,16 +48,16 @@
                 <tr style="border-bottom: 1px solid #eee;">
                     <td style="padding: 10px 0;">Promoción del Día (Almuerzo + Bebida)</td>
                     <td style="padding: 10px 0; text-align: center;">1</td>
-                    <td style="padding: 10px 0; text-align: right;">$4.00</td>
+                    <td style="padding: 10px 0; text-align: right;">$2.75</td>
                 </tr>
                 <tr style="border-bottom: 1px solid #eee;">
                     <td style="padding: 10px 0;">Galletas Oreo</td>
                     <td style="padding: 10px 0; text-align: center;">1</td>
-                    <td style="padding: 10px 0; text-align: right;">$0.60</td>
+                    <td style="padding: 10px 0; text-align: right;">$0.40</td>
                 </tr>
                 <tr>
                     <td colspan="2" style="padding: 15px 0; text-align: right; font-weight: bold; font-size: 1.2em;">Total a Pagar:</td>
-                    <td style="padding: 15px 0; text-align: right; font-weight: bold; font-size: 1.2em; color: darkred;">$4.60</td>
+                    <td style="padding: 15px 0; text-align: right; font-weight: bold; font-size: 1.2em; color: darkred;">$3.15</td>
                 </tr>
             </table>
 
@@ -70,18 +66,15 @@
             </div>
         </section>
 
-        <!-- Uso de etiqueta PROGRESS de HTML5 -->
-        <section style="background-color: white; padding: 25px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); margin-bottom: 30px; text-align: center;">
+        <section id="estado-pedido" style="background-color: white; padding: 25px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); margin-bottom: 30px; text-align: center;">
             <h2 style="color: darkred; margin-top: 0;">Estado de tu pedido actual</h2>
-            <p style="font-weight: bold; color: #555;">Cocinando... (El pedido estará listo en 5 minutos)</p>
+            <p style="font-weight: bold; color: #555;">Preparando envío... (Tiempo estimado: 15-20 minutos )</p>
             
-            <!-- Etiqueta semántica <progress> --->
             <progress value="65" max="100" style="width: 100%; height: 25px; accent-color: darkred;"></progress>
             <p style="font-size: 0.9em; color: #888; margin-bottom: 0;">65% completado</p>
         </section>
 
-        <!-- Uso de etiqueta IFRAME de HTML5 para embeber contenido -->
-        <section style="background-color: white; padding: 25px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); margin-bottom: 30px;">
+        <section id="punto-retiro" style="background-color: white; padding: 25px; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); margin-bottom: 30px;">
             <h2 style="color: darkred; border-bottom: 2px solid darkred; padding-bottom: 10px; margin-top: 0;">Punto de Retiro</h2>
             <p style="color: #555;">Acércate al punto marcado en la ESPE sede Santo Domingo (Luz de América) para retirar tu pedido cuando la barra llegue al 100%.</p>
             
@@ -89,7 +82,7 @@
                 <a href="https://maps.app.goo.gl/63eABtZZDTPDACeK9" target="_blank" style="background-color: #28a745; color: white; padding: 10px 20px; text-decoration: none; border-radius: 4px; font-weight: bold; display: inline-block;">Abrir ubicación exacta en Google Maps</a>
             </div>
 
-                </section>
+        </section>
 
     </main>
 
